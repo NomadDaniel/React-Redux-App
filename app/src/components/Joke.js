@@ -12,7 +12,7 @@ const Joke = props => {
       { props.isFetching && (
         <Loader type="Audio" color="darkred" height={ 250 } width={ 250 } timeout={ 5000 } />
       ) }
-      { props.joke && <p>{ props.joke.joke }</p> }
+      { props.joke && <p className="p-joke">{ props.joke.joke }</p> }
       <button className="button" onClick={ props.getJoke }>Click if you dare</button>
     </div>
   );
