@@ -7,13 +7,13 @@ import { getJoke } from '../actions';
 const Joke = props => {
   return (
     <div className="main-container">
-      <h1>Chuck Norris Facts </h1>
-      { !props.joke && !props.isFetching && <p>School is in session... </p> }
+      <h1 className="title">Chuck Norris Facts </h1>
+      { !props.joke && !props.isFetching && <p className="paragraph">School is in session... </p> }
       { props.isFetching && (
         <Loader type="Audio" color="darkred" height={ 250 } width={ 250 } timeout={ 5000 } />
       ) }
       { props.joke && <p>{ props.joke.joke }</p> }
-      <button onClick={ props.getJoke }>Click if you dare</button>
+      <button className="button" onClick={ props.getJoke }>Click if you dare</button>
     </div>
   );
 };

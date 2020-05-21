@@ -20,16 +20,16 @@ body {
   padding: 2%;
 }
 
-#root > div > div > h1 {
+.title {
   font-size: 3rem;
 }
 
-#root > div > div > p {
+.paragraph {
   font-size: 1.4rem;
 }
 
-#root > div > div > button {
-  font-size: 1.5rem;
+.button {
+  font-size: 1.9rem;
   border: 3px solid;
   padding: 1%;
   background-color: darkred;
