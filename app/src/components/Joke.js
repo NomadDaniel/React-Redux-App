@@ -6,7 +6,7 @@ import { getJoke } from '../actions';
 
 const Joke = props => {
   return (
-    <div>
+    <div className="main-container">
       <h1>Chuck Norris Facts </h1>
       { !props.joke && !props.isFetching && <p>School is in session... </p> }
       { props.isFetching && (
